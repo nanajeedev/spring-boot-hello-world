@@ -10,8 +10,8 @@ public class HelloWorldController {
     public String sendGreetings() {
         return "Hello, World!";
     }
-     @GetMapping("/hello3")
-    public String sendGreetings3() {
-        return "Hello, World!3";
+     @GetMapping("/hello34")
+    public String sendGreetings34() {
+        return "Hello, World!34";
     }
 }
