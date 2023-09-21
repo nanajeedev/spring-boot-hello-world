@@ -8,7 +8,7 @@ pipeline {
                     sh "ls -lrt"
                     sh "mvn install"
                     sh "ls -lrt"
-                    sh "cd target"
+                    sh "cd /target"
                     sh "ls -lrt"
                 }
             }
