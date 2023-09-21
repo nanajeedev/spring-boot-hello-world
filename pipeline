@@ -2,14 +2,12 @@ pipeline {
     agent any
 
     stages {
-         stage("code_analysis") {
+         stage("build code") {
             steps{
                 script{
                     sh "ls -lrt"
                     sh "mvn install"
-                    sh "ls -lrt"
-                    sh "cd target"
-                    sh "ls -lrt"
+                    sh "ls -lrt target/"
                 }
             }
         }
