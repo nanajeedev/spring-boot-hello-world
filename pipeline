@@ -2,24 +2,8 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('checkout') {
+         stage("code_analysis") {
             steps{
-                echo "checkout stage ........"
-            }
-        }
-        stage('Unit_test') {
-             steps{
-                echo "Unit_stage test case ......"
-            }
-        }
-        stage("code_analysis") {
-            steps{
-                echo " code_analysis cases...."
                 script{
                     sh "ls -lrt"
                     sh "mvn install"
