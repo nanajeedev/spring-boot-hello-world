@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-         stage("build code") {
+         stage('build code') {
             steps{
-                scsript{
+                script{
                     sh "ls -lrt"
+                    sh "mvn install"
                 }
             }
         }
