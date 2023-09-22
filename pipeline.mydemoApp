@@ -6,7 +6,6 @@ pipeline {
             steps{
                 scsript{
                     sh "ls -lrt"
-                    sh "mvn install"
                 }
             }
         }
