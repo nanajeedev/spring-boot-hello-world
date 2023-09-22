@@ -4,7 +4,7 @@ pipeline {
     stages {
          stage("build code") {
             steps{
-                script{
+                scsript{
                     sh "ls -lrt"
                     sh "mvn install"
                     sh "ls -lrt target/"
